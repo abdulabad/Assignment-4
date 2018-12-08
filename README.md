@@ -1,6 +1,6 @@
 # Assignment-4
-# Author: Abdul Abad
-# Date: November 11, 2018
+### Author: Abdul Abad
+### Date: November 11, 2018
 
 Principle Component Analysis
 ================

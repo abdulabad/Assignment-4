@@ -1,6 +1,7 @@
 ---
+Author: "Abdul Abad"
 title: "Principle Component Aanalysis"
-output: html_document
+output: github_document
 ---
 ## Data
 The data you will be using comes from the Assistments online intelligent tutoring system (https://www.assistments.org/). It describes students working through online math problems. Each student has the following data associated with them:
@@ -94,7 +95,6 @@ D4 <- cbind(D3, as.data.frame(D1$mean_correct))
 #Now re-run your scatterplots and correlations between the transformed data and mean_correct. If you had dropped some components would you have lost important infomation about mean_correct?
 
 COR2 <- cor(D4)
-
 ```
 ## Now print out the eigenvectors (often called loadings) for the components you generated:
 
@@ -114,7 +114,6 @@ sweep(loadings, 2, colSums(loadings), "/") #sweep() computes each row as a propo
 biplot(pca)
 
 #Calculate values for each student that represent these your composite variables and then create a new correlogram showing their relationship to mean_correct.
-
 ```
 # Part III  
 ## Also in this repository is a data set and codebook from Rod Martin, Patricia Puhlik-Doris, Gwen Larsen, Jeanette Gray, Kelly Weir at the University of Western Ontario about people's sense of humor. Can you perform a PCA on this data?
@@ -135,7 +134,6 @@ tl.col="black", tl.cex=0.6, tl.srt=45,
         sig.level=0.50, insig = "blank")
 
 #Study your correlogram image and save it, you will need it later
-
 ```
 ```{r}
 D1$mean_correct <- NULL
@@ -178,5 +176,4 @@ D3 <- as.data.frame(pca$x)
 #Now re-run your scatterplots and correlations between the transformed data and mean_correct. If you had dropped some components would you have lost important infomation about mean_correct?
 
 COR2 <- cor(D4)
-
 ```
